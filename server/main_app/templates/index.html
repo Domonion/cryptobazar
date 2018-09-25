@@ -1,29 +1,42 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Конструктор смарт-контрактов</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 </head>
 <body>
-    <form action="output/" method="post">
+    <form action="output/" method="post" class="container">
         {% csrf_token %}
         <fieldset>
-            <legend>Имя:</legend>
-            <input type="text" name="name">
-            <legend>Аббривеатура:</legend>
-            <input type="text" name="abb">
-            <legend>Количество токенов:</legend>
-            <input type="text" name="token_count">
-            <legend>Начало распродажи:</legend>
-            <input type="date" name="start_d">
-            <legend>Время распродажи:</legend>
-            <input type="text" name="time_ico">
-            <legend>Адрес кошелька:</legend>
-            <input type="text" name="restricted">
-            <legend>Процент создателю:</legend>
-            <input type="text" name="percent">
+            <legend class="label label-default">Имя токена:</legend>
+            <input type="text" name="name" class="form-control">
+            <legend class="label label-default">Аббревеатура токена:</legend>
+            <input type="text" name="abb" class="form-control">
+            <legend class="label label-default">Количество токенов:</legend>
+            <input type="text" name="token_count" class="form-control">
+            <legend class="label label-default">Начало распродажи:</legend>
+            <input type="date" name="start_d" class="form-control">
+            <legend class="label label-default">Время распродажи:</legend>
+            <input type="text" name="time_ico" class="form-control">
+            <legend class="label label-default">Адрес кошелька:</legend>
+            <input type="text" name="restricted" class="form-control">
+            <legend class="label label-default">Процент создателю:</legend>
+            <input type="text" name="percent" class="form-control">
         </fieldset>
-        <input type="submit">
+        <input type="submit" class="btn btn-default btn-lg center">
     </form>
 </body>
 </html>
