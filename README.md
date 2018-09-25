@@ -85,7 +85,7 @@ docker run domonion/cryptobazar:latest
 
 for git:
 ```cmd
-git clone github.com/Domonion/cryptobazar
+git clone https://gitlab.com/geranazavr555/cryptobazar-ico-framework.git
 pip3 install -r requirements.txt
 python3 ./server/manage.py runserver
 ```
