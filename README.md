@@ -12,7 +12,14 @@
 
 ## Key Features
 
-* Fast
+* Fast and secure blockchain ICO framework
+* Optimal implementation
+  - with usage of newest technologies
+* Docker Container-based environment
+* User-friendly web interface
+  - intuitive and understandable web form
+  - innovative interface design
+  - calming and relaxing interface colors
 * Crossplatform
   - availaible on Linux, Max and Windows
 
