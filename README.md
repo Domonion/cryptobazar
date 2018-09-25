@@ -100,7 +100,7 @@ Developed by **Jd42D3**, which is actualy
 <p align="center">
   <a href="https://github.com/Domonion">Domonion</a> • 
   <a href="https://github.com/EgorGornak">EgorGornak</a> • 
-  <a href="https://github.com/ ">впишите себя</a> with the help from
+  <a href="https://github.com/rbkn99 ">rbkn99</a> with the help from
   <a href="https://github.com/geranazavr555">geranazavr</a> • 
   <a href="https://github.com/doreshnikov">doreshnikov</a>
 </p>
