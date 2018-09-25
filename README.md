@@ -12,6 +12,10 @@
 
 ## Key Features
 
+* Fast
+* Crossplatform
+  - availaible on Linux, Max and Windows
+
 ## How to use
 
 ## Donwload
