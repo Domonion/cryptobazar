@@ -99,7 +99,7 @@ Actualy, you don't even need to have any further troubles with installation befo
 Open your browser on `<server-address>:<port>`, where `<server-address>` is actually where you have started the server using Docker and `<port>` is your set up port for connection. By default (if you didn't interfere with the source code itself) the port is set to `8000`.
 After you've opened the page you should see that everything is working and you can start using the tool.
 
-If you have any issues or troubles, please feel free to create an issue on [our github](https://github.com/Domonion/cryptobazar/issues) and contact the creators.
+If you have any issues or troubles, please feel free to create an issue on [our github](https://gitlab.com/geranazavr555/cryptobazar-ico-framework) and contact the creators.
 
 ## Credits
 
