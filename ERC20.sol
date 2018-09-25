@@ -203,13 +203,13 @@ contract BurnableToken is StandardToken {
 
 contract SimpleCoinToken is BurnableToken {
     
-  string public constant name = "Simple Coin Token";
+  string public constant name = %template "Simple Coin Token" %%template;
    
-  string public constant symbol = "SCT";
+  string public constant symbol = %template "SCT" %%template;
     
   uint32 public constant decimals = 18;
 
-  uint256 public INITIAL_SUPPLY = 100000000 * 1 ether;
+  uint256 public INITIAL_SUPPLY = %template 100000000 %%template * 1 ether;
 
   constructor() {
     totalSupply = INITIAL_SUPPLY;
@@ -237,12 +237,12 @@ contract Crowdsale is Ownable {
   uint rate;
 
   constructor () public {
-    multisig = 0xEA15Adb66DC92a4BbCcC8Bf32fd25E2e86a2A770;
-    restricted = 0xb3eD172CC64839FB0C0Aa06aa129f402e994e7De;
-    restrictedPercent = 40;
+    multisig = 0x9B797d6db50bAF38c87917D88ae4F43c3AD11cAb;
+    restricted = %template 0xb3eD172CC64839FB0C0Aa06aa129f402e994e7De %%template;
+    restrictedPercent = %template 40 %%template;
     rate = 100000000000000000000;
-    start = 1500379200;
-    period = 28;
+    start = %template 1500379200 %%template;
+    period = %template 28 %%template;
   }
 
   modifier saleIsOn() {
