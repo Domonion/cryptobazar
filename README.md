@@ -54,7 +54,8 @@ The amount of tokens used for this sale. You can actualy put any 256-bit number 
 #### Sale start
 
 _Type: date_
-The date of the beginning of the sale. You can select the date from the webpage-integrated calendar, or you can type the date by yourself, so anyone can choose the best option.
+The date of the beginning of the sale. You can select the date from the webpage-integrated calendar, or you can type the date by keyboard if `DD.MM.YYYY` format, so anyone can choose the best option.
+All the dates are further converted to UNIX format.
 
 #### Sale end
 
@@ -65,10 +66,11 @@ The date of the ending of the sale. As with the **Sale start**, there are two wa
 
 ### Installation
 
-Installation is fully managed by **Docker** itself. This installation guide is presented for **version 1.0.0 and later**. After donwnloading the source code just run the Docker in the source directory to set up the environment:
+Installation is fully managed by **Docker** itself. This installation guide is presented for **version 1.0.0 and later**. After donwnloading the source code just install the requirements and run the Docker in the source directory to set up the environment:
 
 ```cmd
 # вставьте строчку для скачивания кода с гитхаба
+# вставьте строчку для установлки зависимостей
 # вставьте строчку для докера, которая делает всю нужную хуйню
 ```
 
@@ -101,3 +103,13 @@ Developed by **Jd42D3**, which is actualy
 </p>
 
 ## Used tenchnologies
+
+* [Python](https://python.org) with [Django](https://www.djangoproject.com)
+  - for server part
+* [JavaScript ECMA 5](https://www.javascript.com)
+  - for user interface
+* HTML5 + CSS with [Bootstrap](http://getbootstrap.com)
+  - for beautiful responsive interface
+* [Docker](https://www.docker.com)
+  - for environment and dependencies management
+  - `pip3` for dependencies management
