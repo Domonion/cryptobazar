@@ -1,3 +1,6 @@
+import time
+import datetime
+
 from django.shortcuts import render
 
 def main(request):
@@ -5,11 +8,12 @@ def main(request):
 
 
 def output(request):
+    print(request.POST)
     context = {
         "name": request.POST["name"],
         "abb": request.POST["abb"],
         "token_count": request.POST["token_count"],
-        "start": request.POST["start_d"],
+        "start": int(time.mktime(datetime.datetime.strptime(request.POST["start_d"], r"%Y-%m-%d").timetuple())),
         "period": request.POST["time_ico"],
         "restricted": request.POST["restricted"],
         "percent": request.POST["percent"],
