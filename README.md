@@ -28,6 +28,10 @@
 
 ## How to use
 
+This is an ICO Framework for smart-contracts. It helps you to operate smart-contracts by selecting the type of cryptocurrency, the amount of tokens and dates of operations. Everything is operated on the server side, so the client side is not overloaded. 
+
+Client-side has a responsive simple interface designed with most modern tendencies for the most comfortable use. Server side is operated by Django, with high-quality code and optimal blockchain algorythms of cryptocurrency operating.
+
 ### Installation guide
 
 As the common user you don't even have to walk through any kind of installations or settings. The server is already running on the address of `# вставьте адрес сраного сайта`, so everything you have to do is open your browser on the page `# вставь сюда тот же адрес` and you can start using the tool.
