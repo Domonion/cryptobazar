@@ -78,9 +78,16 @@ Amount of award that will be given to ICO creator.
 
 Installation is fully managed by **Docker** itself. This installation guide is presented for **version 1.0.0 and later**. After donwnloading the source code just install the requirements and run the Docker in the source directory to set up the environment:
 
+for docker:
 ```cmd
-git clone https://github.com/Domonion/cryptobazar.git
-docker run -p 8000:8000 domonion/cryptobazar
+docker run domonion/cryptobazar:latest
+```
+
+for git:
+```cmd
+git clone github.com/Domonion/cryptobazar
+pip3 install -r requirements.txt
+python3 ./server/manage.py runserver
 ```
 
 ### Setting up
