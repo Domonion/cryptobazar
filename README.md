@@ -34,11 +34,11 @@ Client-side has a responsive simple interface designed with most modern tendenci
 
 ### Installation guide
 
-As the common user you don't even have to walk through any kind of installations or settings. The server is already running on the address of `# вставьте адрес сраного сайта`, so everything you have to do is open your browser on the page `# вставь сюда тот же адрес` and you can start using the tool.
+You should install Docker, run our container and just open your browser.
 
 ### Using the tool
 
-Opening the page you will see simple (though yet functional) interface with web form of **four fields**:
+Opening the page you will see simple (though yet functional) interface with web form of **seven fields**:
 
 #### Name
 
@@ -61,10 +61,16 @@ _Type: date_
 The date of the beginning of the sale. You can select the date from the webpage-integrated calendar, or you can type the date by keyboard if `DD.MM.YYYY` format, so anyone can choose the best option.
 All the dates are further converted to UNIX format.
 
-#### Sale end
+#### Sale duration
 
-_Type: date_
-The date of the ending of the sale. As with the **Sale start**, there are two ways of entering the date, from integrated calendar or by keyboard.
+_Type: int_
+The duration of the sale in days.
+
+#### Purse address
+Address of ICO starter's purse.
+
+#### Creator percentage
+Amount of award that will be given to ICO creator.
 
 ## Setting up your own ICO Framework
 
@@ -73,20 +79,13 @@ The date of the ending of the sale. As with the **Sale start**, there are two wa
 Installation is fully managed by **Docker** itself. This installation guide is presented for **version 1.0.0 and later**. After donwnloading the source code just install the requirements and run the Docker in the source directory to set up the environment:
 
 ```cmd
-# вставьте строчку для скачивания кода с гитхаба
-# вставьте строчку для установлки зависимостей
-# вставьте строчку для докера, которая делает всю нужную хуйню
+git clone https://github.com/Domonion/cryptobazar.git
+docker run -p 8000:8000 domonion/cryptobazar
 ```
 
 ### Setting up
 
-Actualy, you don't even need to have any further troubles with installation before using this **ICO Framework**. All dependencies from [requirements.txt] are managed by Docker and after the program is started, the connection with server is established automatically by Django:
-
-```python
-# вставьте строчку, которая создает connection, 
-просто потому что почему бы и нет, 
-все равно сюда больше нехуй писать
-```
+Actualy, you don't even need to have any further troubles with installation before using this **ICO Framework**. All dependencies from [requirements.txt] are managed by Docker and after the program is started, the connection with server is established automatically by Django.
 
 ### Using the tool
 
