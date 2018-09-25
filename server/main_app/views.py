@@ -18,4 +18,4 @@ def output(request):
         "restricted": request.POST["restricted"],
         "percent": request.POST["percent"],
     }
-    return render(request, "output.html", context)
+    return render(request, "output.html", context, content_type="text/plain")
