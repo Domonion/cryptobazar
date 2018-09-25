@@ -211,7 +211,7 @@ contract SimpleCoinToken is BurnableToken {
 
   uint256 public INITIAL_SUPPLY = %template 100000000 %%template * 1 ether;
 
-  constructor() {
+  constructor() public {
     totalSupply = INITIAL_SUPPLY;
     balances[msg.sender] = INITIAL_SUPPLY;
   }
