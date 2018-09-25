@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Конструктор смарт-контрактов</title>
-    <script type="text/javascript" src="constructor.js"></script>
 </head>
 <body>
-    <form onsubmit="gen()">
+    <form action="output/" method="post">
+        {% csrf_token %}
         <fieldset>
             <legend>Имя:</legend>
             <input type="text" name="name">
@@ -18,6 +18,10 @@
             <input type="date" name="start_d">
             <legend>Время распродажи:</legend>
             <input type="text" name="time_ico">
+            <legend>Адрес кошелька:</legend>
+            <input type="text" name="restricted">
+            <legend>Процент создателю:</legend>
+            <input type="text" name="percent">
         </fieldset>
         <input type="submit">
     </form>
